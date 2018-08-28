@@ -1,0 +1,29 @@
+{
+  "name": "cairea-devresident-test",
+  "version": "1.0.0",
+  "description": "Test project for devresident description here.",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha ./unit/*.js"
+  },
+  "dependencies": {
+    "alexa-sdk": "^1.0.25",
+    "aws-lambda-mock-context": "^3.2.0",
+    "aws-sdk-mock": "^4.0.0",
+    "mocha": "^5.2.0",
+    "nock": "^9.4.2",
+    "supertest": "^3.1.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.100.0",
+    "chai": "^3.5.0",
+    "clear-require": "^2.0.0",
+    "lambda-local": "^1.4.2",
+    "mocha": "^5.2.0",
+    "request": "^2.87.0",
+    "should": "^13.2.1",
+    "winston": "^2.3.1"
+  }
+}

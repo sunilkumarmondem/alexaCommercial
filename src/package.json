@@ -1,0 +1,33 @@
+{
+  "name": "cairea-devresident",
+  "version": "1.0.0",
+  "description": "devresident description here.",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard "
+  },
+  "dependencies": {
+    "alexa-sdk": "^1.0.25",
+    "aws-sdk": "^2.100.0",
+    "aws-sdk-mock": "^4.0.0",
+    "dotenv": "^6.0.0",
+    "forever": "^0.15.3",
+    "jsonfile": "^4.0.0",
+    "lodash": "^4.17.4",
+    "node-bitarray": "^0.1.0",
+    "raven": "^2.6.3",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "standard": "*"
+  },
+  "standard": {
+    "ignore": [
+      "/constants/",
+      "/helpers/",
+      "index.js"
+    ]
+  }
+}
