@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - apt-get update -y
+      - apt-get install -y maven curl wget gdal-bin python-gdal postgis postgresql postgresql-contrib postgresql-9.3-postgis-2.1
+      - apt-get purge nodejs npm
+      - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+      - apt-get install -y nodejs
+      - node --version
+  build:
+    commands:
+      - sudo ./format.sh
+      - ./test.sh
+  post_build:
+    commands:
+      - echo Build completed on `date`
